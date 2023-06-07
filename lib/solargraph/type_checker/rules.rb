@@ -30,7 +30,7 @@ module Solargraph
       end
 
       def ignore_all_undefined?
-        rank < LEVELS[:strict]
+        rank < LEVELS[:typed]
       end
 
       def validate_consts?
@@ -38,7 +38,7 @@ module Solargraph
       end
 
       def validate_calls?
-        rank >= LEVELS[:typed]
+        rank >= LEVELS[:strict]
       end
 
       def require_type_tags?
