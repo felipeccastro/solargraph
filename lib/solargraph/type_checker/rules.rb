@@ -38,7 +38,7 @@ module Solargraph
       end
 
       def validate_calls?
-        rank >= LEVELS[:strict]
+        rank >= LEVELS[:typed]
       end
 
       def require_type_tags?
